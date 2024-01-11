@@ -13,7 +13,7 @@ class PriceImporter:
             data_list.append({
                 'name': name,
                 'timestamp': timestamp,
-                'price': price,
+                'price': float(price),
                 'currency': currency,
                 'location': location
             })
