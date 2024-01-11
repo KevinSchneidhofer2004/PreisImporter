@@ -10,7 +10,7 @@ class TestPriceImporter(unittest.TestCase):
         processed_test_data = test_instance.process_data()
 
         self.assertEqual(len(processed_test_data), 4)
-        self.assertEqual(processed_test_data[0]['timestamp'], 170447112)
+        self.assertEqual(int(processed_test_data[0]['timestamp']), 170447112)
         self.assertEqual(processed_test_data[1]['name'], 'Andritz')
 
 
